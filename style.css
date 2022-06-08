@@ -1,0 +1,330 @@
+/*css geral*/
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 115px;
+}
+
+nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c59d17;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background: url("bg.jpg");
+}
+
+.copyright {
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+/*------------------------------------------------------------------------------------fim css geral*/
+
+
+/*css home-page*/
+
+.banner {
+    width: 100%;
+}
+
+.utensilios {
+    width: 130px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:before {
+    content: "✦ ";
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+
+/*-------------------------------------------------------------------------------fim css home-page*/
+
+
+/*css produtos*/
+
+.produtos li {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+    padding: 50px 0;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.produtos li:hover {
+    border: 2px solid #c59d17;
+    transform: scale(1.05);
+}
+
+.produtos li:active {
+    border-color: rgb(218, 109, 8);
+    color: rgb(218, 109, 8);
+}
+
+.produtos {
+    width: 940px;
+    margin: 50px auto;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.descricao {
+    font-size: 18px;
+}
+
+
+/*---------------------------------------------------------------------------------fim css produtos*/
+
+
+/*css contato*/
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend,
+form p {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {
+    font-size: 15px;
+    border: none;
+    background-color: lightgray;
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+input {
+    transition: 0.5s;
+}
+
+input:hover {
+    transform: scale(1.05);
+}
+
+textarea {
+    transition: 0.5s;
+}
+
+textarea:hover {
+    transform: scale(1.05);
+}
+
+fieldset label {
+    transition: 0.5s;
+}
+
+fieldset label:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: rgb(231, 130, 5);
+    color: white;
+    transform: scale(1.1);
+}
+
+select {
+    padding: 10px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+/*--------------------------------------------------------------------------------fim css contato*/
+
+@media screen and (max-width: 480px) {
+    body,
+    .caixa,
+    .principal,
+    .conteudo-beneficios,
+    .mapa-conteudo,
+    .video {
+        width: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    nav {
+        position: static;
+    }
+    .lista-beneficios,
+    .imagem-beneficios {
+        width: 100%
+    }
+    iframe {
+        width: 90%;
+        margin: auto;
+    }
+    .produtos {
+        width: auto;
+    }
+    .produtos li {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    li img {
+        justify-content: center;
+        width: 80px;
+    }
+    .input-padrao {
+        width: 80%;
+        margin: 10px;
+    }
+    .enviar {
+        width: 50%;
+    }
+}
